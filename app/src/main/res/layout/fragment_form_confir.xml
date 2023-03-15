@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_white"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="@dimen/dp_410x"
+        android:layout_height="@dimen/dp_64x"
+        android:layout_marginTop="@dimen/dp_0x"
+        android:gravity="center_vertical"
+        android:background="@drawable/tab_bar">
+
+        <ImageButton
+            android:id="@+id/btn_arrow"
+            android:layout_width="@dimen/dp_45x"
+            android:layout_height="@dimen/dp_45x"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/dp_20x"
+            android:background="@color/white"
+            android:contentDescription="@string/icon_arrow"
+            android:gravity="center"
+            android:padding="@dimen/dp_7x"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrow_small_left"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/headline"
+            android:layout_width="@dimen/dp_177x"
+            android:layout_height="@dimen/dp_28x"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/dp_6x"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/headline_address"
+            android:textColor="@color/darkest_blue"
+            android:textSize="@dimen/sp_22x"
+            tools:ignore="TextSizeCheck,TextSizeCheck" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/tv_confirmation"
+        android:layout_width="@dimen/dp_209x"
+        android:layout_height="@dimen/dp_28x"
+        android:layout_marginStart="@dimen/dp_14x"
+        android:layout_marginTop="@dimen/dp_74x"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="-1sp"
+        android:text="@string/_confirmation"
+        android:textAppearance="@style/dark_blue_average"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/tv_personal_data"
+        android:layout_width="@dimen/dp_157x"
+        android:layout_height="@dimen/dp_22x"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/dp_14x"
+        android:layout_marginTop="@dimen/dp_106x"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/_personal_data"
+        android:textAppearance="@style/dark_font"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck,TextSizeCheck" />
+    <RelativeLayout
+        android:layout_width="@dimen/dp_382x"
+        android:layout_height="@dimen/dp_46x"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dp_132x"
+        android:layout_marginStart="@dimen/dp_14x"
+        android:gravity="center_vertical"
+        android:background="@drawable/frame_352">
+
+        <TextView
+            android:id="@+id/tv_con_full_name"
+            android:layout_width="@dimen/dp_362x"
+            android:layout_height="@dimen/dp_20x"
+            android:layout_marginStart="@dimen/dp_8x"
+            android:gravity="center_vertical"
+            android:letterSpacing="-0.02"
+            android:text="@string/_con_full_name"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/sp_17x"
+            tools:ignore="TextSizeCheck,TextSizeCheck" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_382x"
+        android:layout_height="@dimen/dp_46x"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dp_184x"
+        android:gravity="center_vertical"
+        android:background="@drawable/frame_352">
+
+        <TextView
+            android:id="@+id/tv_con_code_country"
+            android:layout_width="@dimen/dp_38x"
+            android:layout_height="@dimen/dp_20x"
+            android:layout_marginStart="@dimen/dp_8x"
+            android:letterSpacing="-0.02"
+            android:text="@string/code_country"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp_17x"
+            tools:ignore="TextSizeCheck,TextSizeCheck" />
+
+        <View
+            android:id="@+id/line_21"
+            android:layout_width="@dimen/dp_4x"
+            android:layout_height="@dimen/dp_22x"
+            android:layout_marginEnd="@dimen/dp_327x"
+            android:layout_marginStart="55dp"
+            android:padding="10dp"
+            android:background="@drawable/line_21" />
+
+        <TextView
+            android:id="@+id/tv_con_phone_number"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="64dp"
+            android:letterSpacing="-0.02"
+            android:text="@string/number"
+            android:textColorHint="@color/gray"
+            android:textSize="17sp"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="@color/blue"
+            tools:ignore="TextSizeCheck" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="382dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="235dp"
+        android:background="@drawable/frame_352"
+        >
+
+        <TextView
+            android:id="@+id/tv_con_user_email"
+            android:layout_width="362dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center_vertical"
+            android:letterSpacing="-0.02"
+            android:text="@string/user_email"
+            android:textAppearance="@style/dark_blue"
+            android:textColor="#224363"
+            android:textSize="17sp"
+            tools:ignore="TextSizeCheck,TextSizeCheck" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="43dp"
+        android:layout_height="22dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="291dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/_address2"
+        android:textAppearance="@style/dark_font"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck,TextSizeCheck" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout"
+        android:layout_width="382dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="323dp"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/small_size"
+        android:background="@drawable/frame_352"
+        android:prompt="@string/select_country">
+
+        <Spinner
+            android:id="@+id/tv_con_name_country"
+            android:layout_width="362dp"
+            android:layout_height="@dimen/dp_42x"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/this_button_opens_list_the_country"
+            android:gravity="center_vertical"
+            android:letterSpacing="-0.02"
+            android:prompt="@string/_country"
+            android:text="@string/_name_country"
+            android:textColor="@color/blue"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText,RedundantDescriptionCheck,RedundantDescriptionCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:textColor="@color/gray"
+        android:layout_width="382dp"
+        android:layout_height="45.84dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="374dp"
+        android:gravity="center_vertical"
+        android:text="@string/_city"
+        android:textAppearance="@style/small_size"
+        android:background="@drawable/frame_360">
+
+        <Spinner
+            android:id="@+id/tv_con_city"
+            android:layout_width="362dp"
+            android:layout_height="@dimen/dp_42x"
+            android:layout_marginStart="8dp"
+            android:gravity="center_vertical"
+            android:letterSpacing="-0.02"
+            android:prompt="@string/_city"
+            android:text="@string/_city"
+            android:textColor="@color/blue"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="382dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="425dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/frame_352">
+
+        <TextView
+            android:id="@+id/tv_con_home"
+            android:layout_width="362dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_vertical"
+            android:letterSpacing="-0.02"
+            android:text="@string/_home"
+            android:textColor="#224363"
+            android:textSize="17sp"
+            tools:ignore="TextSizeCheck" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="382dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="476dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/frame_352"
+        >
+
+        <TextView
+            android:id="@+id/tv_con_index"
+            android:layout_width="362dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_vertical"
+            android:letterSpacing="-0.02"
+            android:text="@string/_index2"
+            android:textColor="#224363"
+            android:textSize="17sp"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TextSizeCheck,TextSizeCheck" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/found_a_mistake"
+        android:layout_width="141dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="532dp"
+        android:gravity="center"
+        android:background="@drawable/container_gray_button">
+
+        <TextView
+            android:id="@+id/tv_found_a_mistake"
+            android:layout_width="131dp"
+            android:layout_height="@dimen/dp_17x"
+            android:gravity="center"
+            android:text="@string/_found_a_mistake"
+            android:textAppearance="@style/gray_average"
+            tools:ignore="TextSizeCheck,TextSizeCheck" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_confirm"
+        android:layout_width="@dimen/dp_372x"
+        android:layout_height="@dimen/dp_54x"
+        android:layout_marginStart="@dimen/dp_20x"
+        android:layout_marginBottom="@dimen/dp_30x"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@drawable/container_button">
+
+        <TextView
+            android:layout_width="@dimen/dp_177x"
+            android:layout_height="@dimen/dp_24x"
+            android:gravity="center"
+            android:text="@string/_confirm"
+            android:textAppearance="@style/text_start_update"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck,TextSizeCheck" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home"
+        android:layout_width="@dimen/dp_410x"
+        android:layout_height="@dimen/dp_20x"
+        android:layout_marginTop="@dimen/dp_362x"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/line_home">
+
+        <View
+            android:id="@+id/home_vector"
+            android:layout_width="@dimen/dp_72x"
+            android:layout_height="@dimen/dp_4x"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_8x"
+            android:background="@drawable/home"
+            />
+    </RelativeLayout>
+</RelativeLayout>

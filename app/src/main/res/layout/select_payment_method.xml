@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="382dp"
+    android:layout_height="334dp"
+    android:orientation="horizontal"
+    android:background="@drawable/frame_391"
+    android:layout_gravity="center|top">
+
+    <RelativeLayout
+        android:id="@+id/tv_select_payment_method"
+        android:layout_width="@dimen/dp_382x"
+        android:layout_height="@dimen/dp_50x"
+        android:background="@drawable/frame_442"
+        android:elevation="@dimen/dp_4x"
+        android:gravity="center_vertical"
+        android:text="@string/_select_payment_method"
+        android:textAppearance="@style/average_size">
+
+        <ImageView
+            android:id="@+id/ic_pay"
+            android:layout_width="@dimen/dp_21x"
+            android:layout_height="@dimen/dp_21x"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/dp_54x"
+            android:contentDescription="@string/_pay_text"
+            android:src="@drawable/ic_payment" />
+
+        <TextView
+            android:id="@+id/some_id"
+            android:layout_width="@dimen/dp_214x"
+            android:layout_height="22dp"
+            android:layout_marginStart="@dimen/dp_78x"
+            android:gravity="center"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/_select_payment_method"
+            android:textAppearance="@style/average_size"
+            tools:ignore="TextSizeCheck" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line_19"
+        android:layout_width="362dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="@dimen/dp_10x"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/line_19" />
+
+    <RadioButton
+        android:id="@+id/my_radio_button2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/my_card"
+        android:contentDescription="@string/icon_cm" />
+
+    <TextView
+        android:layout_width="282dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        android:paddingStart="17dp"
+        android:text="@string/def_title"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        tools:ignore="RtlSymmetry" />
+
+    <RadioButton
+        android:id="@+id/my_radio_button3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/logo3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/el_card"
+        android:contentDescription="@string/icon_cm" />
+
+    <TextView
+        android:layout_width="282dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="-1dp"
+        android:gravity="center_vertical"
+        android:paddingStart="17dp"
+        android:text="@string/el_card"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        tools:ignore="RtlSymmetry" />
+
+    <RadioButton
+        android:id="@+id/my_radio_button4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:gravity="center_vertical"/>
+
+    <ImageView
+        android:id="@+id/logo4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/visa"
+        android:contentDescription="@string/icon_cm" />
+
+    <TextView
+        android:layout_width="282dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="-1dp"
+        android:gravity="center_vertical"
+        android:paddingStart="17dp"
+        android:text="@string/visa"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        tools:ignore="RtlSymmetry" />
+
+    <RadioButton
+        android:id="@+id/my_radio_button5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:gravity="center_vertical"/>
+
+    <ImageView
+        android:id="@+id/logo5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/el_som"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="50dp"
+        android:contentDescription="@string/icon_cm" />
+
+    <TextView
+        android:layout_width="282dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="-1dp"
+        android:gravity="center_vertical"
+        android:paddingStart="17dp"
+        android:text="@string/el_card"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        tools:ignore="RtlSymmetry" />
+
+    <RadioButton
+        android:id="@+id/my_radio_button6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="300dp"
+        android:gravity="center_vertical"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/logo6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/o_card"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="50dp"
+        android:padding="@dimen/sp_6x"
+        android:contentDescription="@string/icon_cm" />
+
+    <TextView
+        android:layout_width="282dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="-1dp"
+        android:gravity="center_vertical"
+        android:paddingStart="17dp"
+        android:text="@string/o_card"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        tools:ignore="RtlSymmetry" />
+
+    <RadioButton
+        android:id="@+id/my_radio_button7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center_vertical"/>
+
+    <ImageView
+        android:id="@+id/logo7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="200dp"
+        android:contentDescription="@string/icon_cm"
+        android:src="@drawable/master_card"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:layout_width="282dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="-1dp"
+        android:gravity="center_vertical"
+        android:paddingStart="17dp"
+        android:text="@string/mastercard"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        tools:ignore="RtlSymmetry" />
+
+</RelativeLayout>
